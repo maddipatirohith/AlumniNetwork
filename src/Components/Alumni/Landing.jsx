@@ -1,8 +1,5 @@
 /*  eslint-disable*/
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 
 const userLanding = () => {
@@ -17,7 +14,7 @@ const userLanding = () => {
     //Fetch user data to display 
     const getUser = async () => {
 
-        const userInfo = await fetch("http://localhost:5000/auth/getuser", {
+        const userInfo = await fetch("http://localhost:8080/auth/getuser", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -27,8 +24,6 @@ const userLanding = () => {
         const Info = await userInfo.json()
         setData(Info)
     }
-
-
 
     return (
         <div>
@@ -97,5 +92,6 @@ const userLanding = () => {
         </div>
     )
 }
+
 
 export default userLanding;

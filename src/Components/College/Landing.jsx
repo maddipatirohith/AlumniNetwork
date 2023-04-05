@@ -5,7 +5,7 @@ const CollegeLanding = () => {
         <div>
             <Navbar />
             <h2>Welcome Back Super Admin!</h2>
-            <a href="/college/newRequests">
+            <a href="/newRequests">
                 <button className="btn btn-primary">Authenticate New Users</button>
             </a>
 

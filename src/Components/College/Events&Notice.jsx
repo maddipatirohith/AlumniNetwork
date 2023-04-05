@@ -10,7 +10,7 @@ const addEvents = () => {
     const [notices, setNotices] = useState([]);
 
     const getEvents = async () => {
-        const response = await fetch("http://localhost:5000/api/getEvents", {
+        const response = await fetch("http://localhost:8080/api/getEvents", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ const addEvents = () => {
 
     }
     const getNotices = async () => {
-        const response = await fetch("http://localhost:5000/api/getNotices", {
+        const response = await fetch("http://localhost:8080/api/getNotices", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

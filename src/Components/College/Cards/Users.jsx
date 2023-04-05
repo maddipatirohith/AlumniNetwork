@@ -8,7 +8,7 @@ function Card(props) {
 
      const handleAccept = async (e) => {
  
-         const response = await fetch('http://localhost:5000/api/acceptNewRequests', {
+         const response = await fetch('http://localhost:8080/api/acceptNewRequests', {
              method: 'Post',
              headers: { 
                  'Content-Type': 'application/json',
@@ -21,14 +21,14 @@ function Card(props) {
      }
  
      const handleReject = async (e) => {
-         const response = await fetch('http://localhost:5000/api/rejectNewRequests', {
+         const response = await fetch('http://localhost:8080/api/rejectNewRequests', {
              method: 'Post',
              headers: {
                  'Content-Type': 'application/json',
              },
              body: JSON.stringify({ id: props._id })
          })
-         console.log("HI")
+
          window.location.reload(true);
      }
 
@@ -44,17 +44,17 @@ function Card(props) {
 
                     <div className="row mb-1">
                         <h6 className=" mb-0 text-muted  ">{props.email}</h6>
-                        {/* <p className="  mb-0 font-weight-light text-muted col"> </p> */}
+                        
                     </div>
 
                     <div className="row mb-1">
                         <h6 className=" mb-0  text-muted">{props.phoneNo}</h6>
-                        {/* <p className=" font-weight-light col mb-0 text-muted "></p> */}
+                        
                     </div>
 
                     <div className="row mb-1">
                         <h6 className=" mb-0 text-muted">{props.college}</h6>
-                        {/* <p className=" font-weight-normal col mb-0 text-muted "></p> */}
+                        
                     </div>
 
                     <p className="row mb-2  text-muted " style={{ "marginLeft": "10px" }}>{props.description}</p>

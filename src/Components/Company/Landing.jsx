@@ -11,7 +11,7 @@ const companyLanding = () => {
   const [data, setData] = useState([]);
 
   const getAlumni = async () => {
-    const response = await fetch("http://localhost:5000/api/getAlumni", {
+    const response = await fetch("http://localhost:8080/api/getAlumni", {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -36,6 +36,8 @@ const companyLanding = () => {
       phoneNo={props.phoneNo}
       college={props.college}
       _id={props._id}
+      profileImage={props.profileImage}
+      resume={props.resume}
       delete="false"
     />
   }
@@ -60,14 +62,3 @@ const companyLanding = () => {
   )
 }
 export default companyLanding;
-{/* 
-<div className="leftsearch col-md-2 ms-3" style={{ backgroundColor: 'whitesmoke' }}><div className="search_box mb-4">
-        <div className="nest1 row ">
-          <h5>Search using keywords: </h5>
-        </div>
-        <div className="mt-2">
-          <i className="fa-solid fa-magnifying-glass" /> <input type="text" style={{ width: '80%' }} placeholder=" Job Description, Company name" />
-        </div>
-      </div>
-    </div> 
-  </div>*/}
