@@ -8,7 +8,7 @@ const NewRequests = () => {
   const [data, setData] = useState([]);
 
   const getUsers = async () => {
-    const response = await fetch("http://localhost:5000/api/getNewUsers", {
+    const response = await fetch("http://localhost:8080/api/getNewUsers", {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

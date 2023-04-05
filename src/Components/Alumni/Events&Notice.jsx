@@ -5,12 +5,14 @@ import EventsCard from "./Cards/Events";
 import NoticesCard from "./Cards/Notices";
 import { useEffect, useState } from "react";
 
+
 const addEvents = () => {
     const [events, setEvents] = useState([]);
     const [notices, setNotices] = useState([]);
+    const token = localStorage.getItem("token");
 
     const getEvents = async () => {
-        const response = await fetch("http://localhost:5000/api/getEvents", {
+        const response = await fetch("http://localhost:8080/api/getEvents", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -23,7 +25,7 @@ const addEvents = () => {
 
     }
     const getNotices = async () => {
-        const response = await fetch("http://localhost:5000/api/getNotices", {
+        const response = await fetch("http://localhost:8080/api/getNotices", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -64,6 +66,7 @@ const addEvents = () => {
 
 
 
+
     return (
         <div style={{ "backgroundColor": "#e8e8e8", "paddingBottom": "50%" }}>
             <Navbar />
@@ -75,11 +78,12 @@ const addEvents = () => {
             <div className="card col-8 mx-auto mb-4 pb-5 " >
                 <p style={{ "fontSize": "50px" }}>Notice</p>
                 {notices.map(AddNotices)}
-                 
+
             </div>
         </div>
 
     );
+
 
 }
 export default addEvents;

@@ -12,7 +12,7 @@ function Register() {
     }
     else {
       const { organisation, userName, email, password } = e.target
-      const response = await fetch("http://localhost:5000/auth/createuser", {
+      const response = await fetch("http://localhost:8080/auth/createuser", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -72,9 +72,9 @@ function Register() {
 
               <input type="email" name="email" className="form-control bottom" placeholder=" Email" />
 
-              <input type="text" name="password" className="form-control bottom" placeholder=" Password" />
+              <input type="password" name="password" className="form-control bottom" placeholder=" Password" />
 
-              <input type="text" name="cpassword" className="form-control bottom" placeholder=" Confirm Password" />
+              <input type="password" name="cpassword" className="form-control bottom" placeholder=" Confirm Password" />
 
 
               <button className="btn mt-2 px-5 btn-lg btn-primary btn-block" type="submit">Sign Up</button>

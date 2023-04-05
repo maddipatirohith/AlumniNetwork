@@ -2,24 +2,10 @@ import React from "react";
 
 
 function Card(props) {
-    /* const token = localStorage.getItem('token')
-    const handleSave = async (e) => {
-        e.target.innerHTML='Saved'
-        const response = await fetch('http://localhost:5000/api/jobs/savedJobs', {
-            method: 'Post',
-            headers: {
-                'auth-token': token,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ job_id: props._id })
-        })
-        
-
-
-    } */
+    
     const handleDelete = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:5000/api/deleteNotices', {
+        const response = await fetch('http://localhost:8080/api/deleteNotices', {
             method: 'Post',
             headers: {
                 'Content-Type': 'application/json',

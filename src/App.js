@@ -1,4 +1,7 @@
 import "./App.css";
+
+import Protected from "./Protected";
+
 import SignUp from "./Components/LandingPages/Register";
 import LandingPage from "./Components/LandingPages/Landing";
 import SignIn from "./Components/LandingPages/SignIn";
@@ -28,19 +31,19 @@ function App() {
         <Route path="/Register" element={<SignUp />} />
         <Route path="/SignIn"  element={<SignIn/>} />
 
-        <Route path="/alumni" element={< AlumniLanding />} />  
-        <Route path="/UpdateProfile" element={<UpdateProfile />} />
-        <Route path="/Profile" element={<Profile />}  />
-        <Route path="/Events" element={<Events />} />
+        <Route path="/alumni" element={< Protected Component={AlumniLanding} />} />  
+        <Route path="/UpdateProfile" element={< Protected Component={UpdateProfile} />} />
+        <Route path="/Profile" element={<Protected Component={Profile} />}  />
+        <Route path="/Events" element={<Protected Component={Events} />} />
 
-        <Route path="/college" element={<CollegeLanding />}  /> 
-        <Route path="/collegeEvents" element={<CollegeEvents />}  />  
-        <Route path="/NewRequests" element={<NewRequests />}  />
-        <Route path="/CreateEvents" element={<CreateEvents/>}   />
-        <Route path="/CreateNotices" element={<CreateNotices/>}   />
+        <Route path="/college" element={<Protected Component={CollegeLanding} />}  /> 
+        <Route path="/collegeEvents" element={<Protected Component={CollegeEvents} />}  />  
+        <Route path="/NewRequests" element={<Protected Component={NewRequests} />}  />
+        <Route path="/CreateEvents" element={<Protected Component={CreateEvents}/>}   />
+        <Route path="/CreateNotices" element={<Protected Component={CreateNotices}/>}   />
           
-          <Route path="/company" element={<CompanyLanding/>}   />
-          <Route path="/company/profile" element={<ViewProfile/>} />
+          <Route path="/company" element={<Protected Component={CompanyLanding}/>}   />
+          <Route path="/company/profile" element={<Protected Component={ViewProfile}/>} />
                                 </>
       </Routes>
     </div>

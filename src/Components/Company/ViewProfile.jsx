@@ -17,7 +17,7 @@ function Profile() {
     //Fetch user data to display 
     const getUser = async () => {
 
-        const userInfo = await fetch("http://localhost:5000/auth/profile", {
+        const userInfo = await fetch("http://localhost:8080/auth/profile", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ function Profile() {
                         <div className="">
 
                             <br />
-                            <img src="https://i.pinimg.com/originals/b9/6d/76/b96d764d91fc70d9ee2643ae8bce1ffa.jpg"
+                            <img src={ `http://localhost:8080/${data.profileImage }`}
                                 className=" rounded-circle" style={{ "height": "150px", "width": "150px" }} />
 
                             <br />
