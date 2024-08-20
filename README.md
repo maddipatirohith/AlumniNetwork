@@ -1,3 +1,6 @@
+# Introduction of Alumni Network
+The Alumni Network is a MERN (MongoDB, Express.js, React.js, Node.js) application designed to connect alumni from various institutions. It provides a platform for former students to network, share experiences, and collaborate, fostering a strong community beyond graduation.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
