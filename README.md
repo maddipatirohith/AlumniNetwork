@@ -1,5 +1,5 @@
 # Introduction of Alumni Network
-The Alumni Network is a MERN (MongoDB, Express.js, React.js, Node.js) application designed to connect alumni from various institutions. It provides a platform for former students to network, share experiences, and collaborate, fostering a strong community beyond graduation.
+The Alumni Network is a dynamic web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It serves as a digital hub, enabling alumni from diverse institutions to connect, share their experiences, and build a thriving community that extends beyond the confines of campus life. The platform empowers former students to network, collaborate, and engage with one another, fostering lifelong relationships and unlocking new opportunities.
 
 # Getting Started with Create React App
 
@@ -34,7 +34,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: this is a one-way operation. Once you `eject`, you cannot go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
