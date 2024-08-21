@@ -1,24 +1,28 @@
+/* Centering text in the App component */
 .App {
   text-align: center;
 }
 
+/* Styling for the logo in the App component */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Applying spinning animation to the logo when motion preference is not reduced */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.navbar-nav li a{
-  
+
+/* Adjusting padding and alignment of items in the navbar */
+.navbar-nav li a {
   padding-left: 5px;
   align-items: center;
 }
 
-
+/* Styling the header section of the App */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,10 +34,12 @@
   color: white;
 }
 
+/* Styling links in the App */
 .App-link {
   color: #61dafb;
 }
 
+/* Keyframes for spinning the logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -42,6 +48,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styling for sign-in form */
 .form-signin {
   width: 50%;
   max-width: 330px;
@@ -57,12 +65,14 @@
   height: auto;
   padding: 10px;
   font-size: 16px;
-  
 }
+
+/* Focus effect for sign-in form controls */
 .form-signin .form-control:focus {
   z-index: 1;
 }
 
+/* Styling for sign-up form */
 .form-signup {
   width: 100%;
   max-width: 450px;
@@ -79,11 +89,13 @@
   padding: 10px;
   font-size: 16px;
 }
+
+/* Focus effect for sign-up form controls */
 .form-signup .form-control:focus {
   z-index: 2;
 }
 
-
+/* Styling for profile form */
 .form-profile {
   width: 100%;
   max-width: 600px;
@@ -94,18 +106,20 @@
   font-weight: 400;
 }
 .form-profile .form-control {
-  
   box-sizing: border-box;
   height: auto;
   padding: 10px;
   font-size: 18px;
 } 
 
-.card-component{
-  margin-left:auto;
+/* Styling for card components */
+.card-component {
+  margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
 }
+
+/* Styling for the main app container */
 #app {
   padding: 1rem;
   background: black;
@@ -119,6 +133,7 @@
   flex-direction: column;
 }
 
+/* Styling for text within the app container */
 #app .txt {
   font-size: 2rem;
 }
