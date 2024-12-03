@@ -1,13 +1,15 @@
+ /* */
+/* This is the base CSS for the entire application */
+/* This sets the default margin to 0 for the body element, and assigns a font-family that includes a variety of system-specific and web-safe fonts, ensuring a consistent look and feel across different platforms */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
-
+/* This sets the font-family for the code elements to a monospace font, providing a distinct visual style for code snippets */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+mono
